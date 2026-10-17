@@ -1,0 +1,149 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0e7ff, #f5f3ff, #ecfeff);
+    min-height: 100vh;
+    padding: 35px 16px;
+    color: #1e293b;
+}
+
+.container {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 35px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 12px 40px rgba(30, 41, 59, 0.12);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.eyebrow {
+    color: #4f46e5;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+h1 {
+    color: #172554;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+    font: inherit;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+textarea {
+    resize: vertical;
+    line-height: 1.5;
+}
+
+button {
+    border: none;
+    border-radius: 9px;
+    padding: 14px;
+    background: #4f46e5;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+form button {
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #3730a3;
+    transform: translateY(-1px);
+}
+
+#status {
+    min-height: 20px;
+    font-size: 14px;
+    color: #15803d;
+    overflow-wrap: anywhere;
+}
+
+.contacts-section {
+    margin-top: 30px;
+    padding-top: 22px;
+    border-top: 1px solid #e2e8f0;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#contactList {
+    list-style: none;
+    margin-top: 18px;
+}
+
+#contactList li {
+    padding: 14px;
+    margin-bottom: 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+    overflow-wrap: anywhere;
+}
+
+#contactList p {
+    color: #64748b;
+    margin-top: 8px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 24px 18px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+}
